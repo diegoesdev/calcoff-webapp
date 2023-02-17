@@ -1,0 +1,45 @@
+// Variables
+// Font sizes
+$size-title: 4.2rem;
+$size-subtitle: 3.6rem;
+$size-paragraph: 2.4rem;
+$size-auxiliar: 1.6rem;
+// Font weights
+$bold: 700;
+$semibold: 600;
+$regular: 400;
+$light: 300;
+// Colors
+$dark: #06113C;
+$orange: #FF8C32;
+$gray: #B6B6B6;
+$light-gray: #EEE;
+
+// Reset default values
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+// Titles
+.header {
+    h1 {
+        font-size: $size-title;
+        font-weight: $bold;
+        color: $dark;
+        span {
+            color: $orange;
+        }
+    }
+    h2 {
+        font-size: $size-subtitle;
+        font-weight: $semibold;
+        color: $dark;
+    }
+}
