@@ -27,6 +27,9 @@ html {
     font-family: 'Rajdhani', sans-serif;
 }
 
+body {
+    background-color: $light-gray;
+}
 // Titles
 .header {
     h1 {
@@ -42,4 +45,8 @@ html {
         font-weight: $semibold;
         color: $dark;
     }
+}
+
+.switcher {
+    
 }
