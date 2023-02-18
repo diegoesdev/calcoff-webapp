@@ -48,5 +48,39 @@ body {
 }
 
 .switcher {
-    
+    display: flex;
+    //position: relative;
+    height: 3rem;
+    width: 20rem;
+    border: .1rem solid $dark;
+    border-radius: 3rem;
+    font-size: $size-auxiliar;
+    font-weight: $semibold;
+    color: $dark;
+    text-align: center;
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .percentage,
+    .discount {
+        cursor: pointer;
+        //position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.8rem;
+        width: 10rem;
+        transition: 0.2s;
+        user-select: none;
+    }
+    .percentage {
+        background-color: $dark;
+        border-radius: 3rem;
+        color: $light-gray;
+    }
+    .discount {
+
+    }
 }
