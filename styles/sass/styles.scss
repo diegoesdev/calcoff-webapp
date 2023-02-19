@@ -62,6 +62,9 @@ body {
         opacity: 0;
         width: 0;
         height: 0;
+        transition-property: background-color;
+        transition-duration: 0.7s;
+        transition-timing-function: linear;
     }
     .percentage,
     .discount {
@@ -74,10 +77,15 @@ body {
         width: 10rem;
         transition: 0.2s;
         user-select: none;
+        
     }
     .percentage {
         background-color: $dark;
         border-radius: 3rem;
         color: $light-gray;
+    }
+    .discount:hover {
+        background-color: $dark;
+
     }
 }
