@@ -29,6 +29,11 @@ html {
 
 body {
     background-color: $light-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //height: 100vh;
 }
 // Titles
 .header {
@@ -47,45 +52,74 @@ body {
     }
 }
 
-.switcher {
-    display: flex;
-    //position: relative;
-    height: 3rem;
+// Switcher
+.switch {
+    position: relative;
     width: 20rem;
-    border: .1rem solid $dark;
-    border-radius: 3rem;
-    font-size: $size-auxiliar;
-    font-weight: $semibold;
-    color: $dark;
-    text-align: center;
+    height: 3rem;
+    border-radius: 5rem;
     input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-        transition-property: background-color;
-        transition-duration: 0.7s;
-        transition-timing-function: linear;
+        appearance: none;
+        width: 20rem;
+        height: 3rem;
+        border-radius: 5rem;
+        border: .1rem solid $dark;
+        background-color: $light-gray;
+        transition: 0.25s;
     }
-    .percentage,
-    .discount {
-        cursor: pointer;
-        //position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 2.8rem;
-        width: 10rem;
-        transition: 0.2s;
-        user-select: none;
-        
+    input::before,
+    input::after {
+        z-index: 2;
+        position: absolute;
+        top: 56%;
+        transform: translate(-50%);
+        font-weight: $bold;
     }
-    .percentage {
+    input::before {
+        content: 'Porcentaje';
+        left: 2rem;
+    }
+    input::after {
+        content: 'Descuento';
+        right: 2rem;
+    }
+    input:checked {
         background-color: $dark;
-        border-radius: 3rem;
+    }
+    input:checked::after,
+    input:checked::before {
         color: $light-gray;
+        transition: 0.5s;
     }
-    .discount:hover {
-        background-color: $dark;
-
+    label {
+        z-index: 1;
+        position: absolute;
+        top: 1rem;
+        bottom: .4rem;
+        border-radius: 5rem;
+    }
+    input:checked + label {
+        left: 1rem;
+        right: 10rem;
+        background-color: $light-gray;
+        transition: left 0.5s, right 0.4s 0.2s;
+    }
+    input:not(:checked) {
+        background-color: $light-gray;
+        transition: background 0.4s;
+    }
+    input:not(:checked)::before {
+        color: $dark;
+        transition: color 0.5s;
+    }
+    input:not(:checked)::after {
+        color: $light-gray;
+        transition: color 0.5s 0.2s;
+    }
+    input:not(:checked) + label {
+        left: 10rem;
+        right: 1rem;
+        background-color: $orange;
+        transition: left 0.4s 0.2s, right 0.5s background 0.35s;
     }
 }
