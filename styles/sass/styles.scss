@@ -127,3 +127,10 @@ body {
         transition: left 0.2s 0.1s, right 0.2s;
     }
 }
+
+// Form
+.percentage {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
