@@ -34,6 +34,7 @@ body {
     justify-content: center;
     align-items: center;
     //height: 100vh;
+    padding: 0 3rem;
 }
 // Titles
 .header {
@@ -132,5 +133,22 @@ body {
 .percentage {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
+    width: 100%;
+    label {
+        font-size: $size-paragraph;
+        color: $dark;
+    }
+    input {
+        height: 5rem;
+        width: 100%;
+        max-width: 36rem;
+        padding: 1rem;
+    }
+    input::placeholder {
+        font-size: $size-paragraph;
+        font-weight: $light;
+        color: $gray;
+    }
 }
