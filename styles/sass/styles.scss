@@ -150,5 +150,18 @@ body {
         font-size: $size-paragraph;
         font-weight: $light;
         color: $gray;
+        font-family: 'Rajdhani', sans-serif;
+    }
+    &--button {
+        background-color: $orange;
+        height: 5rem;
+        width: 100%;
+        max-width: 36rem;
+        border-style: none;
+        border-radius: 5rem;
+        color: $light-gray;
+        font-size: $size-subtitle;
+        font-weight: $semibold;
+        font-family: 'Rajdhani', sans-serif;
     }
 }
