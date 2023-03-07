@@ -90,7 +90,7 @@ body {
     }
     input:checked::after,
     input:checked::before {
-        color: $dark;
+        color: $light-gray;
         transition: 0.1s;
     }
     label {
@@ -101,31 +101,31 @@ body {
         border-radius: 5rem;
     }
     input:checked + label {
-        left: 0rem;
-        right: 10rem;
+        left: 10rem;
+        right: 0rem;
         background-color: $dark;
-        transition: left 0.1s, right 0.1s 0.2s;
+        transition: right 0.1s, left 0.1s 0.1s;
     }
     input:not(:checked) {
         background-color: $light-gray;
         transition: background 0.4s;
     }
     input:not(:checked)::before {
-        color: $dark;
+        color: $light-gray;
         transition: color 0.2s;
     }
     input:not(:checked)::after {
-        color: $light-gray;
+        color: $dark;
         transition: color 0.1s 0.1s;
     }
     input:checked::before {
-        color: $light-gray;
+        color: $dark;
     }
     input:not(:checked) + label {
-        left: 10rem;
-        right: 0rem;
+        left: 0rem;
+        right: 10rem;
         background-color: $dark;
-        transition: left 0.2s 0.1s, right 0.2s;
+        transition: right 0.1s 0.1s, left 0.1s;
     }
 }
 
