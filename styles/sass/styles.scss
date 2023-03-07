@@ -33,11 +33,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    //height: 100vh;
-    padding: 0 3rem;
+    padding: 5rem 3rem 0rem 3rem;
 }
 // Titles
 .header {
+    text-align: center;
     h1 {
         font-size: $size-title;
         font-weight: $bold;
@@ -50,6 +50,7 @@ body {
         font-size: $size-subtitle;
         font-weight: $semibold;
         color: $dark;
+        padding: 3rem 0;
     }
 }
 
@@ -136,6 +137,7 @@ body {
     align-items: center;
     text-align: center;
     width: 100%;
+    padding: 3rem 0;
     label {
         font-size: $size-paragraph;
         color: $dark;
