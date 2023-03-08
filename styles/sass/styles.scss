@@ -141,12 +141,14 @@ body {
     label {
         font-size: $size-paragraph;
         color: $dark;
+        padding: .5rem 0;
     }
     input {
         height: 5rem;
         width: 100%;
         max-width: 36rem;
         padding: 1rem;
+        margin-bottom: 2rem;
     }
     input::placeholder {
         font-size: $size-paragraph;
@@ -165,5 +167,6 @@ body {
         font-size: $size-subtitle;
         font-weight: $semibold;
         font-family: 'Rajdhani', sans-serif;
+        margin: 2rem 0;
     }
 }
